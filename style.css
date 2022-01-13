@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; 
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  margin: 120px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+.text {
+  padding: 40px 50px;
+  line-height: 30px;
+}
+
+/* ----------sedans------------ */
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  height: 500px;
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+.sedans button:hover {
+  background-color: hsl(30, 95%, 83%);
+}
+
+/* ----------suvs------------ */
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  height: 500px;
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.suvs button:hover {
+  background-color: hsl(185, 23%, 72%);
+}
+
+/* ---------luxury---------- */
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  height: 500px;
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+.luxury button:hover {
+  background-color: hsl(180, 17%, 71%);
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin: 20px 0;
+  color: white;
+}
+p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+button {
+  margin-top: 90px;
+  padding: 15px 45px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 375px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  .sedans {
+    height: 450px;
+  }
+  .suvs {
+    height: 450px;
+  }
+  .luxury {
+    height: 450;
+  }
+  button {
+    margin-top: 30px;
+  }
+}
